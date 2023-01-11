@@ -16,7 +16,7 @@ const asyncAdd = async (a, b) => {
 	if (typeof a !== 'number' || typeof b !== 'number') {
 		return Promise.reject('Argumenty muszą mieć typ number!');
 	}
-	return new Promise((resolve, reject) => {
+	return new Promise((resolve) => {
 		setTimeout(() => {
 			resolve(a + b);
 		}, 100);
